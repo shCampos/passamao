@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 20px 40px;
+  overflow: hidden;
+  background-color: #f2f2f2;
+  color: #1f1f1f;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+}
+nav {
+  width: 100%;
+  display: block;
+  top: 0;
+  right: 0;
+  margin-bottom: 15px;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 10pt;
+}
+select {
+  min-width: 150px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-style: italic;
+  background: #f2f2f2;
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+}
+th, td {
+  padding: 0px 5px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #0088b7;
+}
+.linkSelected {
+  font-weight: bold;
+}
+.scientificName {
+  font-style: 'italic';
+}
+.sobreSection {
+  width: 80%;
+  margin-bottom: 10px;
+}
+#container {
+  margin: 10px 0;
+  /* background: transparent url('img/dumortiera_hirsuta.jpg') no-repeat 1px 0px; */
+}
