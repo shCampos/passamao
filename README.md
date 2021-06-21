@@ -15,6 +15,6 @@ Curso de Ciências Biológicas | UFMS - campus do Pantanal
 - As áreas coloridas aparecem nas imagens por causa do [Konva.js](https://konvajs.org/).
 ---
 ## Equipe
-avatar | <img width="90px" src="assets/avatars/samuelAvatar.png" alt="avatar - Samuel"/>
+<img width="90px" src="assets/avatars/ranielly.jpeg" alt="ranielly"/> | <img width="90px" src="assets/avatars/samuel.png" alt="samuel"/>
 --- | ---
 Ranielly Garcia | Samuel Campos
