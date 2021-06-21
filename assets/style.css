@@ -29,7 +29,7 @@ select {
   min-width: 150px;
   padding: 5px 10px;
   font-size: 16px;
-  font-style: italic;
+  /* font-style: italic; */
   background: #f2f2f2;
   border: 1px solid #1f1f1f;
   border-radius: 8px;
