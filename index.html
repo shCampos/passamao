@@ -11,7 +11,6 @@
   <link rel="stylesheet" type="text/css" href="assets/style.css"> 
 
   <script src="https://unpkg.com/konva@8.0.4/konva.min.js"></script>
-
 </head>
 <body>
   <nav>
@@ -24,7 +23,7 @@
 
   <label for="selectItems">Escolha:</label>
   <select name="selectItems" id="selectItems" onchange="changeItem()">
-    <option value="bryophyta" selected>Brophyta</option>
+    <option value="bryophyta" selected>Bryophyta</option>
     <option value="dumortiera_hirsuta" class="scientificName">Dumortiera hirsuta</option>
     <option value="equisetum" class="scientificName">Equisetum sp.</option>
     <option value="marchantia_polymorpha" class="scientificName">Marchantia polymorpha</option>    
@@ -34,7 +33,9 @@
     <option value="selaginella" class="scientificName">Selaginella sp.</option>
   </select>
 
-  <div id="container"></div>
+  <div id="container">
+   
+  </div>
 
   <footer>
     Protótipo desenvolvido para a disciplina de Biologia e Taxonomia de Criptogamas.<br/>
@@ -51,7 +52,8 @@
 
     function changeItem() {
       item = document.getElementById("selectItems").value;
-      document.getElementById("container").style.background = `transparent url('assets/plants/${item}.jpg') no-repeat 1px 0px`;
+      document.getElementById("container").style.background = `transparent url('assets/plants/${item}.jpg') no-repeat`;
+      //document.getElementById("imagem").src = `assets/plants/${item}.jpg`
     }
   </script>
   <script type="text/javascript" src="scripts/konva.js"></script>
