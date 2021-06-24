@@ -548,7 +548,6 @@ var tooltip = new Konva.Label({
   visible: false,
   listening: false,
 });
-
 tooltip.add(
   new Konva.Tag({
     fill: 'black',
@@ -557,14 +556,8 @@ tooltip.add(
     pointerHeight: 10,
     lineJoin: 'round',
     cornerRadius: 3,
-    /*shadowColor: 'black',
-    shadowBlur: 10,
-    shadowOffsetX: 10,
-    shadowOffsetY: 10,
-    shadowOpacity: 0.5,*/
   })
 );
-
 tooltip.add(
   new Konva.Text({
     text: '',
@@ -575,7 +568,6 @@ tooltip.add(
     fill: 'white',
   })
 );
-
 tooltipLayer.add(tooltip);
 
 // get areas data
@@ -584,7 +576,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelector('#selectItems').addEventListener('change', (event) => {
-  stage.destroyChildren();
+  //stage.destroyChildren();
+  shapesLayer.destroy();
   init();
 });
 
