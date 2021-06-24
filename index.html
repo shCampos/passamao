@@ -44,6 +44,20 @@
   </footer>
 
   <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      if( navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)
+      ){
+        window.alert("Algumas funcionalidades desse site ainda não funcionam para celulares.");
+      }
+    });
+  </script>
+  <script type="text/javascript">
     var item = "";
 
     document.addEventListener("DOMContentLoaded", () => {
