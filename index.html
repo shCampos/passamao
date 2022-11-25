@@ -44,14 +44,13 @@
     </optgroup>
   </select>
 
-  <div id="container">
-   
-  </div>
+  <div id="container"></div>
+  <p class="fonte"><strong>Fonte: </strong><spam id="fonte"></spam></p>
 
   <footer>
     Protótipo desenvolvido para algumas disciplinas.<br/>
     Curso de Ciências Biológicas | UFMS - campus do Pantanal<br/>
-    &copy; 2021
+    &copy; 2022
   </footer>
 
   <script type="text/javascript">
@@ -69,18 +68,27 @@
     });
   </script>
   <script type="text/javascript">
-    var item = "";
+    var item = ""
 
     document.addEventListener("DOMContentLoaded", () => {
-      changeItem();
-    });
+      changeItem()
+    })
 
-    function changeItem() {
-      item = document.getElementById("selectItems").value;
-      document.getElementById("container").style.background = `transparent url('assets/images/${item}.jpg') no-repeat center`;
+    const changeItem = () => {
+      item = document.getElementById("selectItems").value
+      document.getElementById("container").style.background = `transparent url('assets/images/${item}.jpg') no-repeat center`
       document.getElementById("container").style.backgroundSize = `auto 100%`
       //document.getElementById("imagem").src = `assets/plants/${item}.jpg`
+
+      if (item == 'lacusovagusmagnificens') {
+        document.getElementById("fonte").innerHTML = `<a href="https://doi.org/10.1111/j.1475-4983.2008.00811.x" target="_blank">Witton (2008)</a>`
+      } else if (item == 'corumbellaemcalcario' || item == 'smilacaceaeemcalcario') {
+        document.getElementById("fonte").innerHTML = `autoria própria`
+      } else {
+        document.getElementById("fonte").innerHTML = `<a href="https://www.gbif.org/" target="_blank">GBIF</a>`
+      }
     }
+
   </script>
 
   <script type="text/javascript" src="scripts/konva.js"></script>

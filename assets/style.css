@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  padding: 20px 40px;
-  overflow: hidden;
+  padding: 20px 40px 5px 40px;
+  /* overflow: hidden; */
+  overflow-x: hidden;
   background-color: #f2f2f2;
   color: #1f1f1f;
   font-family: 'Open Sans', sans-serif;
@@ -18,8 +19,8 @@ nav {
 }
 footer {
   width: 100%;
-  position: fixed;
-  display: block;
+  position: relative;
+  display: inline-block;
   bottom: 0;
   left: 0;
   text-align: center;
@@ -29,7 +30,6 @@ select {
   min-width: 150px;
   padding: 5px 10px;
   font-size: 16px;
-  /* font-style: italic; */
   background: #f2f2f2;
   border: 1px solid #1f1f1f;
   border-radius: 8px;
@@ -53,6 +53,13 @@ a {
   margin-bottom: 10px;
 }
 #container {
-  margin: 10px 0;
+  margin: 10px 0px 5px 0px;
   /* background: transparent url('img/dumortiera_hirsuta.jpg') no-repeat 1px 0px; */
+}
+.fonte {
+  text-align: center;
+  font-size: 10pt;
+  width: 100%;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
