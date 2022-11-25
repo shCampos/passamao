@@ -27,25 +27,32 @@
 
   <label for="selectItems">Escolha:</label>
   <select name="selectItems" id="selectItems" onchange="changeItem()">
-    <option value="bryophyta" selected>Bryophyta</option>
-    <option value="dumortiera_hirsuta" class="scientificName">Dumortiera hirsuta</option>
-    <option value="equisetum" class="scientificName">Equisetum sp.</option>
-    <option value="marchantia_polymorpha" class="scientificName">Marchantia polymorpha</option>    
-    <option value="phaoceros_carolinianus" class="scientificName">Phaoceros carolinianus</option>
-    <option value="polystichum_munitum" class="scientificName">Polystichum munitum</option>
-    <option value="psilotum_nudum" class="scientificName">Psilotum nudum</option>
-    <option value="selaginella" class="scientificName">Selaginella sp.</option>
+    <optgroup label="Fósseis">
+      <option value="corumbellaemcalcario" class="scientificName">Corumbella sp.</option>
+      <option value="smilacaceaeemcalcario">Smilacaceae</option>
+      <option value="lacusovagusmagnificens" class="scientificName">Lacusovagus magnificens</option>
+    </optgroup>
+    <optgroup label="Plantas">
+      <option value="bryophyta">Bryophyta</option>
+      <option value="dumortiera_hirsuta" class="scientificName">Dumortiera hirsuta</option>
+      <option value="equisetum" class="scientificName">Equisetum sp.</option>
+      <option value="marchantia_polymorpha" class="scientificName">Marchantia polymorpha</option>    
+      <option value="phaoceros_carolinianus" class="scientificName">Phaoceros carolinianus</option>
+      <option value="polystichum_munitum" class="scientificName">Polystichum munitum</option>
+      <option value="psilotum_nudum" class="scientificName">Psilotum nudum</option>
+      <option value="selaginella" class="scientificName">Selaginella sp.</option>
+    </optgroup>
   </select>
 
   <div id="container">
    
   </div>
 
-  <footer>
+  <!-- <footer>
     Protótipo desenvolvido para a disciplina de Biologia e Taxonomia de Criptogamas.<br/>
     Curso de Ciências Biológicas | UFMS - campus do Pantanal<br/>
     &copy; 2021
-  </footer>
+  </footer> -->
 
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
@@ -70,7 +77,8 @@
 
     function changeItem() {
       item = document.getElementById("selectItems").value;
-      document.getElementById("container").style.background = `transparent url('assets/plants/${item}.jpg') no-repeat`;
+      document.getElementById("container").style.background = `transparent url('assets/images/${item}.jpg') no-repeat center`;
+      document.getElementById("container").style.backgroundSize = `auto 100%`
       //document.getElementById("imagem").src = `assets/plants/${item}.jpg`
     }
   </script>
